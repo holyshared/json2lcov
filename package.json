@@ -1,0 +1,22 @@
+{
+  "name": "json-cov-to-lcov",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/json-cov-to-lcov.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holyshared/json-cov-to-lcov.git"
+  },
+  "author": "Noritaka Horio",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "5bebff4359ac0ec7bf6faef3b69d323337fae994",
+  "devDependencies": {
+    "chai": "~1.8.0",
+    "sinon": "~1.7.3",
+    "blanket": "~1.1.5"
+  }
+}
