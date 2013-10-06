@@ -1,0 +1,75 @@
+{
+  "instrumentation": "node-jscoverage",
+  "sloc": 2,
+  "hits": 2,
+  "misses": 0,
+  "coverage": 100,
+  "files": [
+    {
+      "filename": "fixture.js",
+      "coverage": 100,
+      "hits": 2,
+      "misses": 0,
+      "sloc": 2,
+      "source": {
+        "1": {
+          "source": "'use strict';",
+          "coverage": ""
+        },
+        "2": {
+          "source": "",
+          "coverage": ""
+        },
+        "3": {
+          "source": "function hello(){",
+          "coverage": ""
+        },
+        "4": {
+          "source": "  return 'Hello!';",
+          "coverage": 1
+        },
+        "5": {
+          "source": "}",
+          "coverage": ""
+        },
+        "6": {
+          "source": "",
+          "coverage": ""
+        },
+        "7": {
+          "source": "module.exports = hello;",
+          "coverage": 1
+        },
+        "8": {
+          "source": "",
+          "coverage": ""
+        }
+      }
+    }
+  ],
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2013-10-06T14:37:47.675Z",
+    "end": "2013-10-06T14:37:47.681Z",
+    "duration": 6
+  },
+  "tests": [
+    {
+      "title": "hello",
+      "fullTitle": "fixture hello",
+      "duration": 2
+    }
+  ],
+  "failures": [
+    {
+      "title": "hello",
+      "fullTitle": "fixture hello",
+      "duration": 2
+    }
+  ],
+  "passes": []
+}

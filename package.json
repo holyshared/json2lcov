@@ -4,7 +4,10 @@
   "description": "",
   "main": "lib/json-cov-to-lcov.js",
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha -R spec",
+    "blanket": {
+      "pattern": "json-cov-to-lcov/lib"
+    }
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,9 @@
   "devDependencies": {
     "chai": "~1.8.0",
     "sinon": "~1.7.3",
-    "blanket": "~1.1.5"
+    "blanket": "~1.1.5",
+    "mocha-lcov-reporter": "0.0.1",
+    "mocha": "~1.13.0",
+    "coveralls": "~2.3.0"
   }
 }
