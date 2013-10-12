@@ -22,7 +22,6 @@
   "gitHead": "5bebff4359ac0ec7bf6faef3b69d323337fae994",
   "devDependencies": {
     "chai": "~1.8.0",
-    "sinon": "~1.7.3",
     "blanket": "~1.1.5",
     "mocha-lcov-reporter": "0.0.1",
     "mocha": "~1.13.0",
