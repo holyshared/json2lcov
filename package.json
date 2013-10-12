@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "",
   "main": "lib/json-cov-to-lcov.js",
+  "bin": {
+    "jsoncovtolcov": "./bin/json-cov-to-lcov.js"
+  },
   "scripts": {
     "test": "./node_modules/.bin/mocha -R spec & ./node_modules/.bin/mocha --require blanket -R html-cov > test/coverage.html",
     "blanket": {
