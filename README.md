@@ -25,4 +25,4 @@ UnitTest
 
 	npm install -g mocha mocha-lcov-reporter jscoverage
 	npm install
-	mocha --reporter spec
+	npm test
