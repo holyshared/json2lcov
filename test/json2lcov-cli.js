@@ -2,10 +2,11 @@
 
 var fs = require('fs'),
     path = require('path'),
+    exec = require('child_process').exec,
     expect = require('chai').expect,
-    jsoncovToLcov = require('../lib/json-cov-to-lcov');
+    jsoncovToLcov = require('../lib/json2lcov');
 
-describe('json-cov-to-lcov', function(){
+describe('json2lcov', function(){
 
   var expectLcovContent = '';
 
@@ -18,16 +19,11 @@ describe('json-cov-to-lcov', function(){
 
   it('converted into lcov from json-cov', function(done){
 
-    fs.readFile( path.resolve('./test/fixtures/fixture.json'), function (error, content) {
+    var fixtureFile = path.resolve('./test/fixtures/fixture.json');
 
-      if (error) {
-        throw error;
-      }
-
-      var result = jsoncovToLcov( JSON.parse(content.toString()) );
-      expect(result).to.equals(expectLcovContent);
+    exec('cat ' + fixtureFile + ' | ./bin/json2lcov.js',  function (error, stdout, stderr) {
+      expect(stdout.toString()).to.equals(expectLcovContent);
       done();
-
     });
 
   });

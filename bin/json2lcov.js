@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var inputReport = '',
-    jsoncovToLcov = require('../lib/json-cov-to-lcov');
+    jsoncovToLcov = require('../lib/json2lcov');
 
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
