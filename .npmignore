@@ -1,2 +1,5 @@
 .travis.yml
 /node_modules/
+json2lcov.sublime-project
+json2lcov.sublime-workspace
+test/coverage.html
