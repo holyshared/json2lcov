@@ -12,6 +12,12 @@
       "pattern": "json2lcov/lib"
     }
   },
+  "keywords": [
+    "json-cov",
+    "lcov",
+    "formatter",
+    "converter"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/holyshared/json2lcov.git"
