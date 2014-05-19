@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/holyshared/json2lcov.png?label=ready&title=Ready)](https://waffle.io/holyshared/json2lcov)
 json2lcov
 ===============================================================
 
