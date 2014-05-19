@@ -1,6 +1,6 @@
 {
   "name": "json2lcov",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The report data of a **json-cov** format are changed into a **lcov** format",
   "main": "lib/json2lcov.js",
   "bin": {
