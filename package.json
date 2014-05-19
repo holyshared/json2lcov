@@ -32,7 +32,7 @@
     "chai": "~1.8.0",
     "mocha-lcov-reporter": "0.0.1",
     "mocha": "~1.13.0",
-    "coveralls": "~2.3.0",
+    "coveralls": "^2.10.0",
     "blanket": "^1.1.6"
   }
 }
