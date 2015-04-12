@@ -29,10 +29,10 @@
   "readmeFilename": "README.md",
   "gitHead": "5bebff4359ac0ec7bf6faef3b69d323337fae994",
   "devDependencies": {
-    "chai": "~1.8.0",
-    "mocha-lcov-reporter": "0.0.1",
-    "mocha": "~1.13.0",
+    "blanket": "^1.1.6",
+    "chai": "^2.2.0",
     "coveralls": "^2.10.0",
-    "blanket": "^1.1.6"
+    "mocha": "^2.2.4",
+    "mocha-lcov-reporter": "0.0.2"
   }
 }
