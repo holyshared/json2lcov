@@ -12,7 +12,7 @@ gulp.task 'coffee', ->
   gulp.src('./src/*.coffee')
     .pipe(sourcemaps.init())
     .pipe(coffeeStream)
-    .pipe(sourcemaps.write '../sourcemap')
+    .pipe(sourcemaps.write '../sourcemap/lib')
     .pipe(gulp.dest './lib/')
 
 gulp.task 'coveralls', ->
