@@ -17,5 +17,5 @@ gulp.task 'coffee', ->
 
 gulp.task 'coveralls', ->
 
-  gulp.src('./report.lcov')
+  gulp.src('./lcov-report.lcov')
     .pipe(run('./node_modules/.bin/coveralls'));
