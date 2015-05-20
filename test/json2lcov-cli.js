@@ -6,7 +6,7 @@ var fs = require('fs'),
     expect = require('chai').expect,
     jsoncovToLcov = require('../lib/json2lcov');
 
-describe('json2lcov', function(){
+describe('json2lcov-cli', function(){
 
   var expectLcovContent = '';
 
