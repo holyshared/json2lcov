@@ -31,7 +31,7 @@
   "readmeFilename": "README.md",
   "gitHead": "5bebff4359ac0ec7bf6faef3b69d323337fae994",
   "devDependencies": {
-    "blanket": "^1.1.6",
+    "blanket": "^1.1.7",
     "chai": "^2.2.0",
     "coffee-script": "^1.9.1",
     "coveralls": "^2.10.0",
