@@ -1,2 +1,2 @@
 --require blanket
--R spec
+-R mocha-multi

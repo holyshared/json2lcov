@@ -1,13 +1,13 @@
 {
   "name": "json2lcov",
   "version": "0.1.1",
-  "description": "The report data of a **json-cov** format are changed into a **lcov** format",
+  "description": "The report data of a json-cov format are changed into a lcov format",
   "main": "lib/json2lcov.js",
   "bin": {
     "json2lcov": "./bin/json2lcov.js"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha",
+    "test": "multi='spec=- mocha-lcov-reporter=lcov-report.lcov' ./node_modules/.bin/mocha",
     "build": "./node_modules/.bin/gulp --require coffee-script coffee",
     "coveralls": "./node_modules/.bin/gulp --require coffee-script coveralls"
   },
@@ -41,6 +41,7 @@
     "gulp-sourcemaps": "^1.5.1",
     "gulp-util": "^3.0.4",
     "mocha": "^2.2.4",
-    "mocha-lcov-reporter": "0.0.2"
+    "mocha-lcov-reporter": "0.0.2",
+    "mocha-multi": "^0.7.1"
   }
 }
