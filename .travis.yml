@@ -2,6 +2,6 @@ language: node_js
 node_js:
   - "0.11"
 script:
-  - ./node_modules/.bin/mocha --require blanket --reporter mocha-lcov-reporter > report.lcov
+  - npm test
 after_script:
   - npm run coveralls
