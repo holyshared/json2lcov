@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "multi='spec=- mocha-lcov-reporter=lcov-report.lcov' ./node_modules/.bin/mocha",
-    "build": "./node_modules/.bin/gulp --require=coffee-script coffee",
-    "coveralls": "./node_modules/.bin/gulp --require=coffee-script coveralls"
+    "build": "./node_modules/.bin/gulp --require=coffee-script/register coffee",
+    "coveralls": "./node_modules/.bin/gulp --require=coffee-script/register coveralls"
   },
   "config": {
     "blanket": {
