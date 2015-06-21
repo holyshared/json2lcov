@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "multi='spec=- mocha-lcov-reporter=lcov-report.lcov' ./node_modules/.bin/mocha",
-    "build": "./node_modules/.bin/gulp --require coffee-script coffee",
-    "coveralls": "./node_modules/.bin/gulp --require coffee-script coveralls"
+    "build": "./node_modules/.bin/gulp --require=coffee-script coffee",
+    "coveralls": "./node_modules/.bin/gulp --require=coffee-script coveralls"
   },
   "config": {
     "blanket": {
@@ -29,19 +29,18 @@
   "author": "Noritaka Horio",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "5bebff4359ac0ec7bf6faef3b69d323337fae994",
   "devDependencies": {
-    "blanket": "^1.1.7",
-    "chai": "^2.2.0",
-    "coffee-script": "^1.9.1",
-    "coveralls": "^2.11.0",
-    "gulp": "^3.8.11",
-    "gulp-coffee": "^2.3.1",
-    "gulp-run": "^1.6.7",
-    "gulp-sourcemaps": "^1.5.1",
-    "gulp-util": "^3.0.4",
-    "mocha": "^2.2.4",
-    "mocha-lcov-reporter": "0.0.2",
-    "mocha-multi": "^0.7.1"
+    "blanket": "~1.1",
+    "chai": "~3.0",
+    "coffee-script": "~1.9",
+    "coveralls": "~2.11",
+    "gulp": "~3.9",
+    "gulp-coffee": "~2.3",
+    "gulp-run": "~1.6",
+    "gulp-sourcemaps": "~1.5",
+    "gulp-util": "~3.0",
+    "mocha": "~2.2",
+    "mocha-lcov-reporter": "~0.0.2",
+    "mocha-multi": "~0.7"
   }
 }
