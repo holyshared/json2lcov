@@ -7,7 +7,7 @@
     "json2lcov": "./bin/json2lcov.js"
   },
   "scripts": {
-    "test": "multi='spec=- mocha-lcov-reporter=lcov-report.lcov' ./node_modules/.bin/mocha",
+    "test": "multi='spec=- mocha-tcov-reporter=- mocha-lcov-reporter=lcov-report.lcov' ./node_modules/.bin/mocha",
     "build": "./node_modules/.bin/gulp --require=coffee-script/register coffee",
     "coveralls": "./node_modules/.bin/gulp --require=coffee-script/register coveralls"
   },
@@ -41,6 +41,7 @@
     "gulp-util": "~3.0",
     "mocha": "~2.2",
     "mocha-lcov-reporter": "~0.0.2",
-    "mocha-multi": "~0.7"
+    "mocha-multi": "~0.7",
+    "mocha-tcov-reporter": "0.0.7"
   }
 }
