@@ -1,6 +1,6 @@
 {
   "name": "json2lcov",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "The report data of a json-cov format are changed into a lcov format",
   "main": "lib/json2lcov.js",
   "bin": {
@@ -31,7 +31,7 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "blanket": "~1.1",
-    "chai": "~3.0",
+    "chai": "^3.2.0",
     "coffee-script": "~1.9",
     "coveralls": "~2.11",
     "gulp": "~3.9",
