@@ -1,35 +1,21 @@
 'use strict';
 
-var fs = require('fs'),
-    path = require('path'),
-    expect = require('chai').expect,
-    jsoncovToLcov = require('../lib/json2lcov');
+const fs = require('fs');
+const path = require('path');
+const jsoncovToLcov = require('../lib/json2lcov');
 
-describe('json2lcov', function(){
-
-  var expectLcovContent = '';
-
-  beforeEach(function(done){
-    fs.readFile( path.resolve('./test/fixtures/fixture.lcov'), function (error, content) {
-      expectLcovContent = content.toString();
-      done();
+describe('json2lcov', function() {
+  beforeEach(function() {
+    return readFile('./test/fixtures/fixture.lcov').then((content) => {
+      this.lcov = content.toString();
     });
   });
 
-  it('converted into lcov from json-cov', function(done){
+  it('converted into lcov from json-cov', function() {
+    return readFile('./test/fixtures/fixture.json').then((content) => {
+      const result = jsoncovToLcov( JSON.parse(content.toString()) );
 
-    fs.readFile( path.resolve('./test/fixtures/fixture.json'), function (error, content) {
-
-      if (error) {
-        throw error;
-      }
-
-      var result = jsoncovToLcov( JSON.parse(content.toString()) );
-      expect(result).to.equals(expectLcovContent);
-      done();
-
+      assert.equal(result, this.lcov);
     });
-
   });
-
 });
