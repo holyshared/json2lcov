@@ -7,14 +7,8 @@
     "json2lcov": "./bin/json2lcov.js"
   },
   "scripts": {
-    "test": "multi='spec=- mocha-tcov-reporter=- mocha-lcov-reporter=lcov-report.lcov' ./node_modules/.bin/mocha",
-    "build": "./node_modules/.bin/gulp --require=coffee-script/register coffee",
-    "coveralls": "./node_modules/.bin/gulp --require=coffee-script/register coveralls"
-  },
-  "config": {
-    "blanket": {
-      "pattern": "json2lcov/lib"
-    }
+    "test": "istanbul cover _mocha",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "keywords": [
     "json-cov",
@@ -30,18 +24,10 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "blanket": "~1.1",
-    "chai": "^3.2.0",
-    "coffee-script": "~1.9",
+    "bluebird": "^3.3.5",
     "coveralls": "~2.11",
-    "gulp": "~3.9",
-    "gulp-coffee": "~2.3",
-    "gulp-run": "~1.6",
-    "gulp-sourcemaps": "~1.5",
-    "gulp-util": "~3.0",
+    "istanbul": "^0.4.3",
     "mocha": "^2.3.0",
-    "mocha-lcov-reporter": "~0.0.2",
-    "mocha-multi": "~0.7",
-    "mocha-tcov-reporter": "~0.1"
+    "power-assert": "^1.3.1"
   }
 }
