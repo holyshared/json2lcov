@@ -8,7 +8,6 @@
   },
   "scripts": {
     "test": "istanbul cover _mocha",
-    "build": "./node_modules/.bin/gulp --require=coffee-script/register coffee",
     "coveralls": "./node_modules/.bin/gulp --require=coffee-script/register coveralls"
   },
   "config": {
