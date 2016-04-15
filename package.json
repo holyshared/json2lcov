@@ -10,11 +10,6 @@
     "test": "istanbul cover _mocha",
     "coveralls": "./node_modules/.bin/gulp --require=coffee-script/register coveralls"
   },
-  "config": {
-    "blanket": {
-      "pattern": "json2lcov/lib"
-    }
-  },
   "keywords": [
     "json-cov",
     "lcov",
@@ -29,7 +24,6 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "blanket": "~1.1",
     "chai": "^3.2.0",
     "coffee-script": "~1.9",
     "coveralls": "~2.11",
@@ -39,9 +33,6 @@
     "gulp-sourcemaps": "~1.5",
     "gulp-util": "~3.0",
     "istanbul": "^0.4.3",
-    "mocha": "^2.3.0",
-    "mocha-lcov-reporter": "~0.0.2",
-    "mocha-multi": "~0.7",
-    "mocha-tcov-reporter": "~0.1"
+    "mocha": "^2.3.0"
   }
 }
